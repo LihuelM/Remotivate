@@ -14,16 +14,16 @@ Este proyecto tiene la visión de convertirse en una guía para quienes buscan u
 
 Demo del proyecto: 
 
--------
+------------
 
-Credits:
-	Template:
+*Credits:*
+- Template:
 		Landed by HTML5 UP - html5up.net | AJ | aj@lkn.io | @ajlkn
-	Demo Images:
+- Demo Images:
 		Unsplash (unsplash.com)
-	Icons:
+- Icons:
 		Font Awesome (fontawesome.io)
-	Other:
+Other:
 		jQuery (jquery.com)
 		Scrollex (github.com/ajlkn/jquery.scrollex)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
