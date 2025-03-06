@@ -12,7 +12,7 @@ Este proyecto tiene la visión de convertirse en una guía para quienes buscan u
 
 ------------
 
-Demo del proyecto: 
+Demo del proyecto: https://lihuelm.github.io/Remotivate/
 
 ------------
 
