@@ -1,34 +1,28 @@
-Landed by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Remotivate
+💻🚀🌎
 
+Este sitio web nace como un proyecto personal con la aspiración de orientar a personas que desean cambiar de carrera, brindándoles una segunda oportunidad para desarrollar una trayectoria en el mundo remoto.
 
-A dark, slick, modern, responsive, adjective-drenched design built around an extremely
-dynamic landing page (scroll that mofo!). Inspired by Big Picture, another design
-of mine with a similarish feel/flow, only this time I took it waaaaaay further and
-actually made it multipurpose (versus copping out and making it a one pager like I
-did last time ;) Includes multiple pages, a bunch of pre-styled elements, and all
-its Sass sources.
+El propósito principal es proporcionar información clave y recursos valiosos para quienes buscan reconvertirse profesionalmente en un entorno digital. A través del sitio, los usuarios podrán acceder a:
+✅ Exploración de nuevas carreras: Información sobre opciones viables para el trabajo remoto.
+✅ Plataformas educativas online: Recursos y cursos disponibles para capacitarse en nuevas áreas.
+✅ Guía para la búsqueda de empleo remoto: Recomendaciones sobre portales y estrategias para conseguir trabajo online.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+Este proyecto tiene la visión de convertirse en una guía para quienes buscan un cambio profesional alineado con las oportunidades que ofrece el mercado digital.
 
-(* = Not included)
+------------
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+Demo del proyecto: 
 
-AJ
-aj@lkn.io | @ajlkn
-
+-------
 
 Credits:
-
+	Template:
+		Landed by HTML5 UP - html5up.net | AJ | aj@lkn.io | @ajlkn
 	Demo Images:
 		Unsplash (unsplash.com)
-
 	Icons:
 		Font Awesome (fontawesome.io)
-
 	Other:
 		jQuery (jquery.com)
 		Scrollex (github.com/ajlkn/jquery.scrollex)
