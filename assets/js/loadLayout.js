@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     function loadComponent(containerId, filePath) {
-        // Detecta si la página está en "/pages/"
-        let basePath = window.location.pathname.includes("/pages/") ? "../components/" : "components/";
+        const base = getBasePath(); // Viene de pathResolver.js
+        const fullPath = base + "components/" + filePath;
 
-        fetch(basePath + filePath)
+        fetch(fullPath)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Error HTTP: ${response.status}`);
@@ -11,12 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 return response.text();
             })
             .then(data => {
-                document.getElementById(containerId).innerHTML = data;
+                const container = document.getElementById(containerId);
+                if (container) container.innerHTML = data;
             })
             .catch(error => console.error(`Error al cargar ${filePath}:`, error));
     }
 
-    // Cargar header y footer en el HTML
     loadComponent("header-container", "header.html");
     loadComponent("footer-container", "footer.html");
 });
