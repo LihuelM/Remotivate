@@ -61,12 +61,23 @@
     transition: transform 0.3s;
     cursor: pointer;
     text-align: center;
-    background: rgba(39, 40, 51, 0.965);
-    /* background-color: #6f6c6c21; */
+    background-color: #6f6c6c21;
 }
 
 .career-item:hover {
     transform: translateY(-5px);
+}
+
+/* Fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Ajustes responsivos */

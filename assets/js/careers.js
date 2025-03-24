@@ -4,6 +4,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const tagsContainer = document.querySelector(".tags");
     const careersContainer = document.querySelector(".careers");
 
+    // INTERSECTION OBSERVER para animaciones fade-in
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            } else {
+                entry.target.classList.remove("visible");
+            }
+        });
+    }, observerOptions);
+    
+
+    function observeFadeIns() {
+        const newFaders = document.querySelectorAll('.fade-in:not(.visible)');
+        newFaders.forEach(el => observer.observe(el));
+    }
+
     function renderTags() {
         tagsContainer.innerHTML = "";
         const allTags = new Set(careersData.flatMap(career => career.tags));
@@ -15,23 +37,19 @@ document.addEventListener("DOMContentLoaded", function () {
             tagsContainer.appendChild(tagBtn);
         });
 
-        // Agregar botón "Limpiar selección" con icono
+        // Botón "Limpiar selección"
         const clearBtn = document.createElement("button");
-        clearBtn.classList.add("clear-button"); // Clase para estilos CSS
-        clearBtn.textContent = "Limpiar selección"; // Agregar texto al botón
+        clearBtn.classList.add("clear-button");
+        clearBtn.textContent = "Limpiar selección";
         clearBtn.addEventListener("click", clearSelection);
 
-        // Crear el icono de basurero
         const icon = document.createElement("img");
-        icon.src = "../images/trash.svg"; // Ruta del icono
+        icon.src = "images/trash.svg";
         icon.alt = "Limpiar selección";
-        icon.classList.add("clear-icon"); // Clase para estilos del icono
+        icon.classList.add("clear-icon");
 
-        // Agregar el icono DESPUÉS del texto
         clearBtn.appendChild(icon);
-
         tagsContainer.appendChild(clearBtn);
-
     }
 
     function toggleTag(tag, button) {
@@ -46,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function clearSelection() {
-        selectedTags.clear(); // Vacía todas las selecciones
+        selectedTags.clear();
         document.querySelectorAll(".tags button").forEach(button => {
             button.classList.remove("selected");
         });
@@ -72,13 +90,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         filteredCareers.forEach(career => {
             const careerItem = document.createElement("div");
-            careerItem.classList.add("career-item");
+            careerItem.classList.add("career-item", "fade-in");
+
             careerItem.innerHTML = `<h4>${career.title}</h4>`;
 
             const descriptionDiv = document.createElement("div");
             descriptionDiv.classList.add("career-description");
             descriptionDiv.textContent = career.description;
-            descriptionDiv.style.display = "none"; // Se oculta inicialmente
+            descriptionDiv.style.display = "none";
 
             careerItem.appendChild(descriptionDiv);
             careerItem.addEventListener("click", () => {
@@ -93,6 +112,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             careersContainer.appendChild(careerItem);
         });
+
+        observeFadeIns(); // <-- IMPORTANTE para animar las nuevas tarjetas
     }
 
     renderTags();
