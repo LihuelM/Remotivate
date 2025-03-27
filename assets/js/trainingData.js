@@ -1,27 +1,27 @@
 const tecnologia_programacion = [
     {
       title: "PLATZI",
-      description: "Plataforma de educación en línea que ofrece cursos en tecnología, marketing y negocios.",
-      costo: "Principalmente cursos de pago; varios planes de cursos ilimitados y algunos cursos gratuitos.",
+      description: "Plataforma de educación en línea que ofrece escuelas de tecnología, inglés, diseño, marketing y negocios.",
+      costo: "Cursos gratuitos y pagos, posee varios planes.",
       certificaciones: "Sí, ofrece.",
       link: "https://platzi.com/",
       image: "images/training-cards/platzi.jpg"
     },
     {
       title: "EDTEAM",
-      description: "Plataforma educativa que se centra en cursos de tecnología, diseño y emprendimiento.",
+      description: "Plataforma educativa que se centra en cursos de tecnología, inglés, diseño y emprendimiento.",
       costo: "Cursos gratuitos y pagos.",
-      certificaciones: "Sí, ofrece.",
+      certificaciones: "Sí, ofrece certificaciones.",
       link: "https://ed.team/",
-      image: "https://source.unsplash.com/300x400/?tech,learning"
+      image: "images/training-cards/EDteam.png"
     },
     {
       title: "OPEN BOOTCAMP",
       description: "Plataforma que ofrece cursos gratuitos en programación y desarrollo de software.",
       costo: "Cursos gratuitos.",
-      certificaciones: "Sí, ofrece.",
+      certificaciones: "Sí, ofrece certificaciones.",
       link: "https://open-bootcamp.com/",
-      image: "https://source.unsplash.com/300x400/?code,education"
+      image: "images/training-cards/OpBoot3.jpg"
     },
     {
       title: "freeCodeCamp",
@@ -29,39 +29,31 @@ const tecnologia_programacion = [
       costo: "Cursos gratuitos.",
       certificaciones: "Sí, ofrece.",
       link: "https://www.freecodecamp.org/espanol/",
-      image: "https://source.unsplash.com/300x400/?programming,bootcamp"
+      image: "images/training-cards/FreeCodeCamp.jpg"
     },
     {
       title: "aprendiendo.dev",
-      description: "Plataforma enfocada en cursos de desarrollo web y tecnologías relacionadas.",
-      costo: "No especificado.",
-      certificaciones: "No especificado.",
+      description: "Cursos Online de Programación Web y JavaScript",
+      costo: "Gratis.",
+      certificaciones: "No, ofrece certificaciones.",
       link: "https://aprendiendo.dev/",
-      image: "https://source.unsplash.com/300x400/?programming,development"
+      image: "images/training-cards/apren.dev.jpg"
     },
     {
       title: "CódigoFacilito",
-      description: "Plataforma que ofrece cursos y tutoriales en programación y tecnología.",
-      costo: "Cursos gratuitos y de pago.",
-      certificaciones: "Sí, ofrece certificaciones.",
+      description: "Plataforma que ofrece cursos y tutoriales en programación,tecnología e inglés.",
+      costo: "Cursos pagos, ofrece 10 clases de prueba.",
+      certificaciones: "Sí, ofrece.",
       link: "https://codigofacilito.com/",
-      image: "https://source.unsplash.com/300x400/?code,online"
-    },
-    {
-      title: "Alaimo Labs",
-      description: "Ofrece cursos gratuitos en desarrollo web y otras tecnologías.",
-      costo: "Cursos gratuitos.",
-      certificaciones: "No especificado.",
-      link: "https://alaimolabs.com/es/",
-      image: "https://source.unsplash.com/300x400/?learning,web"
+      image: "images/training-cards/codFacilito.jpg"
     },
     {
       title: "MoureDev",
       description: "Plataforma que ofrece cursos en programación y desarrollo de software, con un enfoque práctico y comunitario.",
-      costo: "No especificado; algunos recursos pueden ser gratuitos.",
+      costo: "Posee varios planes, 7 días de prueba.",
       certificaciones: "No especificado.",
       link: "https://mouredev.pro/",
-      image: "https://source.unsplash.com/300x400/?developer,coding"
+      image: "images/training-cards/mouredev.jpg"
     },
     {
       title: "Codecademy",
@@ -69,7 +61,7 @@ const tecnologia_programacion = [
       costo: "Planes gratuitos y pagos.",
       certificaciones: "Sí, ofrece certificaciones en el plan pro.",
       link: "https://www.codecademy.com/",
-      image: "https://source.unsplash.com/300x400/?code,interactive"
+      image: "images/training-cards/codeCademy.jpg"
     },
     {
       title: "DataCamp",
@@ -77,15 +69,15 @@ const tecnologia_programacion = [
       costo: "Cursos gratuitos y de pago.",
       certificaciones: "Sí, ofrece certificaciones.",
       link: "https://www.datacamp.com/",
-      image: "https://source.unsplash.com/300x400/?data,analytics"
+      image: "images/training-cards/dataCamp.jpg"
     },
     {
       title: "Desafío LATAM",
-      description: "Academia de tecnología en Latinoamérica con cursos y bootcamps en desarrollo web y más.",
+      description: "Academia de tecnología en Latinoamérica con cursos, bootcamps, talleres en desarrollo web, diseño e inglés.",
       costo: "Cursos gratuitos y de pago.",
       certificaciones: "Sí, ofrece certificaciones.",
       link: "https://desafiolatam.com/cursos_gratuitos/?utm_source=linkedin&utm_medium=embajadores_charlie",
-      image: "https://source.unsplash.com/300x400/?latam,tech"
+      image: "images/training-cards/desafioLatam.jpg"
     },
     {
         title: "Frontend Mentor",
@@ -93,25 +85,25 @@ const tecnologia_programacion = [
         costo: "Desafíos gratuitos y de pago.",
         certificaciones: "No especificado.",
         link: "https://www.frontendmentor.io/",
-        image: "https://source.unsplash.com/300x400/?frontend,code"
+        image: "images/training-cards/frontMentor.jpg"
       },
   ];
   const creativos_diseño = [
     {
       title: "Domestika",
-      description: "Comunidad y plataforma de cursos en línea enfocada en creatividad y diseño.",
+      description: "Comunidad y plataforma de cursos en línea enfocada en creatividad, diseño y marketing.",
       costo: "Cursos de pago; ocasionalmente ofrece cursos gratuitos.",
       certificaciones: "Sí, ofrece certificaciones.",
       link: "https://www.domestika.org/",
-      image: "https://source.unsplash.com/300x400/?design,creativity"
+      image: "images/training-cards/domestika.jpg"
     },
     {
       title: "Canva Design School",
-      description: "Centro de aprendizaje gratuito para diseño gráfico y comunicación visual.",
+      description: "Cursos y actividades gratuitas para diseño gráfico y comunicación visual.",
       costo: "Cursos gratuitos.",
       certificaciones: "No especificado.",
       link: "https://www.canva.com/designschool/",
-      image: "https://source.unsplash.com/300x400/?canva,design"
+      image: "images/training-cards/canva.jpg"
     },
     {
       title: "Skillshare",
@@ -119,8 +111,32 @@ const tecnologia_programacion = [
       costo: "Periodo de prueba gratuito; luego suscripción.",
       certificaciones: "No ofrece certificaciones oficiales.",
       link: "https://www.skillshare.com/",
-      image: "https://source.unsplash.com/300x400/?creativity,entrepreneur"
-    }
+      image: "images/training-cards/skillShare.jpg"
+    },
+    {
+      title: "PLATZI",
+      description: "Plataforma de educación en línea que ofrece escuelas de tecnología, inglés, diseño, marketing y negocios.",
+      costo: "Cursos gratuitos y pagos, posee varios planes.",
+      certificaciones: "Sí, ofrece.",
+      link: "https://platzi.com/",
+      image: "images/training-cards/platzi.jpg"
+    },
+    {
+      title: "EDTEAM",
+      description: "Plataforma educativa que se centra en cursos de tecnología, inglés, diseño y emprendimiento.",
+      costo: "Cursos gratuitos y pagos.",
+      certificaciones: "Sí, ofrece.",
+      link: "https://ed.team/",
+      image: "images/training-cards/EDteam.png"
+    },
+    {
+      title: "Desafío LATAM",
+      description: "Academia de tecnología en Latinoamérica con cursos, bootcamps, talleres en desarrollo web, diseño e inglés.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "Sí, ofrece certificaciones.",
+      link: "https://desafiolatam.com/cursos_gratuitos/?utm_source=linkedin&utm_medium=embajadores_charlie",
+      image: "images/training-cards/desafioLatam.jpg"
+    },
   ];
   const negocios_marketing_emprendimiento = [
     {
@@ -154,7 +170,23 @@ const tecnologia_programacion = [
       certificaciones: "Sí, ofrece certificaciones.",
       link: "https://www.linkedin.com/learning",
       image: "https://source.unsplash.com/300x400/?linkedin,learning"
-    }
+    },
+    {
+      title: "PLATZI",
+      description: "Plataforma de educación en línea que ofrece escuelas de tecnología, inglés, diseño, marketing y negocios.",
+      costo: "Cursos gratuitos y pagos, posee varios planes.",
+      certificaciones: "Sí, ofrece.",
+      link: "https://platzi.com/",
+      image: "images/training-cards/platzi.jpg"
+    },
+    {
+      title: "EDTEAM",
+      description: "Plataforma educativa que se centra en cursos de tecnología, inglés, diseño y emprendimiento.",
+      costo: "Cursos gratuitos y pagos.",
+      certificaciones: "Sí, ofrece.",
+      link: "https://ed.team/",
+      image: "images/training-cards/EDteam.png"
+    },
   ];
   const habilidades_generales_y_profesionales = [
     {
@@ -220,7 +252,23 @@ const tecnologia_programacion = [
       certificaciones: "No especificado.",
       link: "https://claseflix.com/",
       image: "https://source.unsplash.com/300x400/?online,learning"
-    }
+    },
+    {
+      title: "Alison",
+      description: "Plataforma global de aprendizaje en línea que ofrece cursos gratuitos en áreas como tecnología, negocios, salud, idiomas, desarrollo personal, y más. Ideal para mejorar habilidades profesionales o aprender algo nuevo.",
+      costo: "Cursos gratuitos; certificados y diplomas opcionales de pago.",
+      certificaciones: "Sí, ofrece certificados y diplomas (algunos pagos).",
+      link: "https://alison.com/",
+      image: "https://source.unsplash.com/300x400/?online,learning"
+    },
+    {
+      title: "Alaimo Labs",
+      description: "Ofrece cursos orientados al desarrollo de habilidades sociales y organizativas.",
+      costo: "Cursos gratuitos.",
+      certificaciones: "No especificado.",
+      link: "https://alaimolabs.com/es/",
+      image: "images/training-cards/alaimoLabs.jpg"
+    },    
   ];
   
   const academico_universitario = [

@@ -78,6 +78,8 @@
 
 .card-info p {
   margin: 5px 0;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .btn-card {

@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
       card.innerHTML = `
         <img src="${platform.image}" alt="${platform.title}">
         <div class="card-info">
-          <h1>${platform.title}</h1>
           <p>${platform.description}</p>
           <p><strong>Costo:</strong> ${platform.costo}</p>
           <p><strong>Certificaciones:</strong> ${platform.certificaciones}</p>
