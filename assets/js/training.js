@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const container = document.getElementById("carousel-container");
+  const container = document.getElementById("carousel-container-training");
 
   const categorias = {
     tecnologia_programacion: {
