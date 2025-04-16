@@ -22,17 +22,17 @@ const careersData = [
     {
         title: "Reclutador Remoto",
         description: "Se especializa en identificar, evaluar y seleccionar talento para empresas, gestionando procesos de contratación de manera remota. Un reclutador remoto construye relaciones con candidatos y clientes, publica vacantes, realiza entrevistas virtuales y coordina la incorporación de nuevos empleados.",
-        tags: ["Comunicación", "Gestión", "Empatía"]
+        tags: ["Comunicación", "Gestión", "Empatía", "Negociación", "Motivación"]
     },
     {
         title: "Creadora de Contenido",
         description: "Genera contenido digital como blogs, videos, y publicaciones en redes sociales. Es ideal para quienes disfrutan escribir, filmar, y editar.",
-        tags: ["Creatividad", "Expresión", "Comunicación", "Innovación", "Narrativa"]
+        tags: ["Creatividad", "Comunicación", "Innovación", "Narrativa"]
     },
     {
         title: "Diseñadora Gráfica / Product Designer",
         description: "Diseña elementos visuales como logotipos, banners, y material publicitario. Utiliza software de diseño para crear gráficos atractivos. Usualmente se utilizan herramientas No Code.",
-        tags: ["Diseño", "Creatividad", "Estética", "Percepción Visual", "Detalle"]
+        tags: ["Diseño", "Creatividad", "Percepción Visual", "Atención al Detalle"]
     },
     {
         title: "Service Designer",
@@ -42,22 +42,22 @@ const careersData = [
     {
         title: "Diseñadora Web",
         description: "Crea y mantiene sitios web, asegurando que sean visualmente atractivos y funcionales. Se requiere conocimiento en HTML, CSS, y herramientas de diseño web.",
-        tags: ["Diseño", "Creatividad", "Estructura", "Detalle", "Ingenio"]
+        tags: ["Diseño", "Creatividad", "Atención al Detalle", "Innovación"]
     },
     {
         title: "Ilustradora Digital / Animadora Digital",
         description: "Realiza ilustraciones y arte digital para libros, revistas, videojuegos, y otros medios digitales. Crea animaciones y efectos visuales para películas, videojuegos, y contenido en línea.",
-        tags: ["Creatividad", "Expresión", "Diseño", "Percepción Visual", "Estética"]
+        tags: ["Creatividad", "Diseño", "Percepción Visual", "Atención al Detalle"]
     },
     {
         title: "Fotógrafa Freelance",
         description: "Ofrece servicios de fotografía para eventos, productos y proyectos creativos, editando y vendiendo sus fotos en línea.",
-        tags: ["Creatividad", "Observación", "Detalle", "Narrativa", "Expresión"]
+        tags: ["Creatividad", "Observación", "Atención al Detalle", "Narrativa"]
     },
     {
         title: "Representante de Atención al Cliente",
         description: "Proporciona soporte y asistencia a los clientes a través de teléfono, chat o correo electrónico. Ayuda a resolver problemas y responde a consultas.",
-        tags: ["Comunicación", "Empatía", "Paciencia", "Resolución de Problemas", "Escucha Activa"]
+        tags: ["Comunicación", "Empatía", "Paciencia", "Resolución de Problemas", "Negociación"]
     },
     {
         title: "Vendedora en Línea",
@@ -72,7 +72,7 @@ const careersData = [
     {
         title: "Copywriter",
         description: "Escribe textos persuasivos para anuncios, páginas web, y material de marketing con el fin de atraer y convencer a los clientes.",
-        tags: ["Creatividad", "Narrativa", "Persuasión", "Comunicación", "Expresión"]
+        tags: ["Creatividad", "Narrativa", "Persuasión", "Comunicación"]
     },
     {
         title: "Community Manager",
@@ -92,7 +92,7 @@ const careersData = [
     {
         title: "Analista de Datos",
         description: "Interpreta grandes volúmenes de datos para ayudar a las empresas a tomar decisiones informadas. Utiliza herramientas de análisis de datos y software estadístico.",
-        tags: ["Análisis", "Pensamiento Crítico", "Estrategia", "Resolución de Problemas", "Precisión"]
+        tags: ["Análisis", "Pensamiento Crítico", "Estrategia", "Resolución de Problemas", "Atención al Detalle"]
     },
     {
         title: "Especialista en Ciberseguridad",
@@ -102,12 +102,12 @@ const careersData = [
     {
         title: "Ingeniera de DevOps",
         description: "Combina desarrollo de software y operaciones de TI para mejorar la eficiencia del ciclo de vida del software, desde la codificación hasta el despliegue y mantenimiento.",
-        tags: ["Eficiencia", "Optimización", "Innovación", "Lógica", "Estrategia"]
+        tags: ["Optimización", "Innovación", "Lógica", "Estrategia", "Resolución de Problemas"]
     },
     {
         title: "Tester de Software",
         description: "Evalúa aplicaciones y sistemas para identificar y reportar errores y problemas, asegurando que el software funcione correctamente.",
-        tags: ["Atención al Detalle", "Precisión", "Análisis", "Lógica", "Resolución de Problemas"]
+        tags: ["Atención al Detalle", "Atención al Detalle", "Análisis", "Lógica", "Resolución de Problemas"]
     },
     {
         title: "Desarrolladora de Aplicaciones Móviles",
@@ -122,22 +122,22 @@ const careersData = [
     {
         title: "UX Researcher",
         description: "Está orientado a profesionales con experiencia en investigación de usuarios y diseño centrado en las personas. Su propósito es liderar y ejecutar investigaciones que generen valor para el usuario final y que también contribuyan al crecimiento del negocio.",
-        tags: ["Investigación", "Empatía", "Análisis", "Estrategia", "Percepción"]
+        tags: ["Investigación", "Empatía", "Análisis", "Estrategia", "Diseño"]
     },
     {
         title: "Facilitador de Talleres",
         description: "Diseña y dirige talleres prácticos sobre habilidades específicas como emprendimiento, liderazgo, manejo de herramientas digitales, arte, decoración, o alguna profesión que sepas desempeñar.",
-        tags: ["Comunicación", "Liderazgo", "Creatividad", "Empatía", "Enseñanza"]
+        tags: ["Comunicación", "Liderazgo", "Creatividad", "Empatía", "Formación"]
     },
     {
         title: "Mentor en Habilidades Digitales",
         description: "Ayuda a individuos o equipos a adquirir competencias digitales, desde manejo de herramientas hasta habilidades avanzadas en tecnología.",
-        tags: ["Educación", "Innovación", "Paciencia", "Comunicación", "Orientación al Aprendizaje"]
+        tags: ["Formación", "Innovación", "Paciencia", "Comunicación", "Motivación"]
     },
     {
         title: "Profesora de Cursos en Línea",
         description: "Crea y/o enseña cursos en línea en plataformas educativas, compartiendo conocimientos y habilidades en diversas áreas temáticas.",
-        tags: ["Docencia", "Empatía", "Comunicación", "Estrategia", "Capacitación"]
+        tags: ["Formación", "Empatía", "Comunicación", "Estrategia"]
     },
     {
         title: "Coach de Carrera Profesional",

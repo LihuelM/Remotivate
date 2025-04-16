@@ -118,4 +118,66 @@ document.addEventListener("DOMContentLoaded", function () {
 
     renderTags();
     filterCareers();
+
+    // Manejo del toggle exclusivo para intro-cards
+    document.querySelectorAll('.intro-card').forEach(card => {
+        card.addEventListener('click', function (e) {
+          // Evitar que el clic en los botones afecte la lógica
+          if (e.target.tagName === 'BUTTON') return;
+    
+          document.querySelectorAll('.intro-card .card-content').forEach(content => {
+            if (!content.classList.contains('hidden')) {
+              content.classList.add('hidden');
+            }
+          });
+    
+          const content = this.querySelector('.card-content');
+          content.classList.toggle('hidden');
+        });
+      });
+
+    // Relación entre categorías y tags relevantes
+    const categoryTagsMap = {
+        "Habilidades Sociales y Organizativas": ["Gestión", "Organización", "Liderazgo", "Trabajo en Equipo"],
+        "Comunicación y Estrategias de Ventas": ["Comunicación", "Negociación", "Motivación", "Persuasión", "Orientación a Resultados"],
+        "Innovación, Tecnología y/o Procesamiento de Datos": ["Innovación", "Análisis", "Optimización", "Resolución de Problemas", "Lógica", "Seguridad"],
+        "Creatividad y Expresión Artística": ["Creatividad", "Narrativa", "Diseño", "Percepción Visual", "Observación"],
+        "Enfoque en Educación y Formación": ["Formación", "Empatía", "Comunicación", "Motivación"],
+        "Pensamiento Analítico y Estratégicas": ["Capacidad de Analisis", "Pensamiento Crítico", "Estrategia", "Toma de Decisiones"]
+      };
+      
+      // Escucha clicks en los botones de "Ver profesiones relacionadas"
+      document.querySelectorAll('.view-careers').forEach(button => {
+        button.addEventListener('click', event => {
+          const card = event.target.closest('.intro-card');
+          const category = card.getAttribute('data-category');
+          const relatedTags = categoryTagsMap[category] || [];
+        
+          // Simula seleccionar los tags
+          const allButtons = document.querySelectorAll('.tags button');
+          allButtons.forEach(btn => {
+            const tag = btn.textContent.trim();
+            if (relatedTags.includes(tag)) {
+              btn.classList.add('selected');
+            } else {
+              btn.classList.remove('selected');
+            }
+          });
+      
+          // Actualiza el set de tags seleccionados globalmente
+          selectedTags = new Set(relatedTags);
+      
+          // Ejecuta filtrado y hace scroll a resultados
+          filterCareers();
+          
+          const target = document.getElementById("careers-container");
+if (target) {
+  const offset = 200;
+  const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+  window.scrollTo({ top: y, behavior: "smooth" });
+}
+
+        });
+      });
+      
 });

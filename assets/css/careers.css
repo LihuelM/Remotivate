@@ -5,6 +5,57 @@
     padding: 20px;
 }
 
+/* Estilos de las Habilidades por rubro */
+.intro-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .intro-card {
+    text-align: center;
+  }
+  
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    display: none;
+    margin-bottom: 15px;
+  }
+  
+  .actions {
+    display: none;
+  }
+  
+  .actions button {
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 2px solid #e44c65;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .actions button:hover {
+    background-color: #e44c65;
+    color: white;
+  }
+  
+  .intro-card.active .card-description,
+  .intro-card.active .actions {
+    display: block;
+  }
+
 /* Estilos de las tags-btn */
 .tags{
     display: flex;

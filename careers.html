@@ -21,6 +21,70 @@
                             <h2>Carreras Remotas</h2>
                             <p>Selecciona las palabras clave para descubrir carreras que se ajusten a tus habilidades.</p>
                         </header>
+
+						<!-- Sección de Habilidades por rubro -->
+						<div class="intro-cards">
+							<div class="intro-card career-item" data-category="Habilidades Sociales y Organizativas">
+							  <h3 class="card-title">Habilidades Sociales y Organizativas <span class="arrow">&#x25BC;</span></h3>
+							  <div class="card-content hidden">
+								<p class="card-description">Carreras ideales para quienes disfrutan gestionar equipos, coordinar proyectos y apoyar procesos organizativos de forma eficiente.</p>
+								<div class="actions">
+								  <button class="view-careers">Ver profesiones relacionadas</button>
+								  <button>Ver capacitaciones relacionadas</button>
+								</div>
+							  </div>
+							</div>
+							<div class="intro-card career-item" data-category="Comunicación y Estrategias de Ventas">
+							  <h3 class="card-title">Comunicación y Estrategias de Ventas <span class="arrow">&#x25BC;</span></h3>
+							  <div class="card-content hidden">
+								<p class="card-description">Roles que aprovechan el carisma, la persuasión y la capacidad de interactuar para conectar con clientes y promover soluciones.</p>
+								<div class="actions">
+								  <button class="view-careers">Ver profesiones relacionadas</button>
+								  <button>Ver capacitaciones relacionadas</button>
+								</div>
+							  </div>
+							</div>
+							<div class="intro-card career-item" data-category="Innovación, Tecnología y/o Procesamiento de Datos">
+							  <h3 class="card-title">Innovación, Tecnología y/o Procesamiento de Datos <span class="arrow">&#x25BC;</span></h3>
+							  <div class="card-content hidden">
+								<p class="card-description">Profesiones enfocadas en el desarrollo, análisis y gestión de soluciones tecnológicas y procesamiento de datos para resolver problemas complejos.</p>
+								<div class="actions">
+								  <button class="view-careers">Ver profesiones relacionadas</button>
+								  <button>Ver capacitaciones relacionadas</button>
+								</div>
+							  </div>
+							</div>
+							<div class="intro-card career-item" data-category="Creatividad y Expresión Artística">
+							  <h3 class="card-title">Creatividad y Expresión Artística <span class="arrow">&#x25BC;</span></h3>
+							  <div class="card-content hidden">
+								<p class="card-description">Opciones laborales para mentes creativas que disfrutan expresarse a través del diseño, la ilustración, la creación de contenido y más.</p>
+								<div class="actions">
+								  <button class="view-careers">Ver profesiones relacionadas</button>
+								  <button>Ver capacitaciones relacionadas</button>
+								</div>
+							  </div>
+							</div>
+							<div class="intro-card career-item" data-category="Enfoque en Educación y Formación">
+							  <h3 class="card-title">Enfoque en Educación y Formación <span class="arrow">&#x25BC;</span></h3>
+							  <div class="card-content hidden">
+								<p class="card-description">Transforma tu experiencia en conocimiento útil para los demás. Carreras que te permitan diseñar, enseñar y compartir habilidades valiosas que impactan positivamente a otros.</p>
+								<div class="actions">
+								  <button class="view-careers">Ver profesiones relacionadas</button>
+								  <button>Ver capacitaciones relacionadas</button>
+								</div>
+							  </div>
+							</div>
+							<div class="intro-card career-item" data-category="Pensamiento Analítico y Estratégicas">
+							  <h3 class="card-title">Pensamiento Analítico y Estratégicas <span class="arrow">&#x25BC;</span></h3>
+							  <div class="card-content hidden">
+								<p class="card-description">Para quienes disfrutan analizar datos, estructurar estrategias y resolver problemas complejos, aplicando un enfoque práctico y orientado a resultados.</p>
+								<div class="actions">
+								  <button class="view-careers">Ver profesiones relacionadas</button>
+								  <button>Ver capacitaciones relacionadas</button>
+								</div>
+							  </div>
+							</div>
+						  </div>					  
                 
                         <!-- Sección de Tags -->
                         <section id="tags-container">
@@ -46,6 +110,16 @@
 		</div>
 
 		<!-- Scripts -->
+
+			<script>
+				document.querySelectorAll(".intro-card .card-title").forEach(title => {
+				  title.addEventListener("click", () => {
+				    const card = title.parentElement;
+				    card.classList.toggle("active");
+				  });
+				});
+			</script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
