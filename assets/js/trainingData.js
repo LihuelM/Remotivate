@@ -188,6 +188,7 @@ const tecnologia_programacion = [
       image: "images/training-cards/EDteam.png"
     },
   ];
+  //Hay que desarmar estos dos
   const habilidades_generales_y_profesionales = [
     {
       title: "GCFGlobal",
@@ -269,8 +270,7 @@ const tecnologia_programacion = [
       link: "https://alaimolabs.com/es/",
       image: "images/training-cards/alaimoLabs.jpg"
     },    
-  ];
-  
+  ]; 
   const academico_universitario = [
     {
       title: "Coursera",
@@ -329,4 +329,30 @@ const tecnologia_programacion = [
         image: "https://source.unsplash.com/300x400/?university,code"
       },
   ];
+  //Hay que agregar estos 3
+  const idiomas = [
+    {
+      title: "Coursera",
+      description: "Plataforma que colabora con universidades y organizaciones para ofrecer cursos en línea en diversas áreas.",
+      costo: "Cursos gratuitos y pagos.",
+      certificaciones: "Sí, ofrece.",
+      link: "https://www.coursera.org/",
+      image: "https://source.unsplash.com/300x400/?university,online"
+    }
+  ];
+  const habilidades_sociales_y_organizativas = [
+    {
+
+    }
+  ]
+  const educacion_y_formacion = [
+    {
+
+    }
+  ]
+  const habilidades_analiticas_y_estrategicas = [
+    {
+
+    }
+  ]
   

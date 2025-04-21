@@ -3,35 +3,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const categorias = {
     tecnologia_programacion: {
-      titulo: "Tecnología & Programación",
+      titulo: "Innovación, Tecnología y/o Procesamiento de Datos",
       descripcion: "Ideal para quienes quieren aprender a programar, desarrollar software o entrar en el mundo tech.",
       data: tecnologia_programacion
     },
     creativos_diseño: {
-      titulo: "Creatividad & Diseño",
+      titulo: "Creatividad, Expresión Artística y Diseño",
       descripcion: "Arte, diseño gráfico, UX/UI y creatividad digital.",
       data: creativos_diseño
     },
     negocios_marketing_emprendimiento: {
-      titulo: "Negocios, Marketing & Emprendimiento",
+      titulo: "Comunicación, Negocios, Marketing, Emprendimiento",
       descripcion: "Redes sociales, ventas, negocios digitales y más.",
       data: negocios_marketing_emprendimiento
     },
-    habilidades_generales_y_profesionales: {
-      titulo: "Habilidades Profesionales & Generales",
-      descripcion: "Productividad, comunicación, herramientas digitales y más.",
-      data: habilidades_generales_y_profesionales
+    habilidades_sociales_y_organizativas: {
+      titulo: "Habilidades Sociales y Organizativas",
+      descripcion: "Falta colocar nuevo texto...",
+      data: habilidades_sociales_y_organizativas
     },
-    academico_universitario: {
-      titulo: "Formación Académica & Universitaria",
-      descripcion: "Plataformas asociadas a universidades y formación formal.",
-      data: academico_universitario
+    educacion_y_formacion: {
+      titulo: "Formación, capacitación, & Educación",
+      descripcion: "Falta colocar nuevo texto...",
+      data: educacion_y_formacion
+    },
+    idiomas: {
+      titulo: "Idiomas",
+      descripcion: "Falta colocar nuevo texto...",
+      data: idiomas
     }
   };
 
   Object.entries(categorias).forEach(([key, { titulo, descripcion, data }]) => {
     const section = document.createElement("section");
     section.className = "carousel-section";
+    section.id = key; // 👈 Esto permite que funcione el hash para scroll automático
 
     section.innerHTML = `
       <h2>${titulo}</h2>
@@ -74,9 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
       track.appendChild(card);
     });
 
-    // Config
     let position = 0;
-    const step = 1; // px por frame
+    const step = 1;
     const visibleSlides = 4;
     const pages = Math.ceil(totalSlides / visibleSlides);
     let currentPage = 0;
@@ -122,7 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
       resumeAutoplay();
     });
 
-    // Autoplay loop infinito con rAF
     let autoplay = true;
     let rafId;
 
@@ -148,6 +152,17 @@ document.addEventListener("DOMContentLoaded", function () {
     track.addEventListener("mouseenter", stopAutoplay);
     track.addEventListener("mouseleave", resumeAutoplay);
 
-    animate(); // Start autoplay
+    animate();
   });
+
+  // ✅ Hacer scroll automático si hay hash en la URL
+  const hash = window.location.hash?.substring(1);
+  if (hash) {
+    const target = document.getElementById(hash);
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+  }
 });

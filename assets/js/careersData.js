@@ -12,12 +12,12 @@ const careersData = [
     {
         title: "Asistente Virtual",
         description: "Un asistente virtual ofrece soporte administrativo remoto, gestionando correos electrónicos, agendas, y tareas administrativas para empresarios y profesionales.",
-        tags: ["Gestión", "Organización", "Comunicación"]
+        tags: ["Gestión", "Organización", "Comunicación", "Idiomas", "Atención al Cliente"]
     },
     {
         title: "Product Management",
         description: "Lidera el desarrollo de productos desde la concepción hasta el lanzamiento, asegurándose de que cumplan con las necesidades del cliente y los objetivos comerciales.",
-        tags: ["Comunicación", "Gestión", "Organización", "Liderazgo"]
+        tags: ["Comunicación", "Gestión", "Organización", "Liderazgo", "Atención al Cliente"]
     },
     {
         title: "Reclutador Remoto",
@@ -57,12 +57,12 @@ const careersData = [
     {
         title: "Representante de Atención al Cliente",
         description: "Proporciona soporte y asistencia a los clientes a través de teléfono, chat o correo electrónico. Ayuda a resolver problemas y responde a consultas.",
-        tags: ["Comunicación", "Empatía", "Paciencia", "Resolución de Problemas", "Negociación"]
+        tags: ["Comunicación", "Empatía", "Paciencia", "Resolución de Problemas", "Negociación", "Atención al Cliente"]
     },
     {
         title: "Vendedora en Línea",
         description: "Utiliza plataformas digitales para vender productos o servicios. Gestiona la tienda en línea, interactúa con los clientes y maneja las ventas.",
-        tags: ["Estrategia", "Negociación", "Persuasión", "Empatía", "Orientación a Resultados"]
+        tags: ["Estrategia", "Negociación", "Persuasión", "Empatía", "Orientación a Resultados", "Atención al Cliente"]
     },
     {
         title: "Consultora de Marketing Digital",
@@ -82,7 +82,7 @@ const careersData = [
     {
         title: "Especialista en SEO",
         description: "Optimiza sitios web para mejorar su posición en los motores de búsqueda, aumentando el tráfico orgánico y la visibilidad en línea.",
-        tags: ["Análisis", "Estrategia", "Optimización", "Innovación", "Resolución de Problemas"]
+        tags: ["Análisis", "Estrategia", "Optimización", "Innovación", "Resolución de Problemas", "Atención al Cliente"]
     },
     {
         title: "Desarrolladora de Software",
@@ -122,22 +122,22 @@ const careersData = [
     {
         title: "UX Researcher",
         description: "Está orientado a profesionales con experiencia en investigación de usuarios y diseño centrado en las personas. Su propósito es liderar y ejecutar investigaciones que generen valor para el usuario final y que también contribuyan al crecimiento del negocio.",
-        tags: ["Investigación", "Empatía", "Análisis", "Estrategia", "Diseño"]
+        tags: ["Investigación", "Empatía", "Análisis", "Estrategia", "Diseño", "Atención al Cliente"]
     },
     {
         title: "Facilitador de Talleres",
         description: "Diseña y dirige talleres prácticos sobre habilidades específicas como emprendimiento, liderazgo, manejo de herramientas digitales, arte, decoración, o alguna profesión que sepas desempeñar.",
-        tags: ["Comunicación", "Liderazgo", "Creatividad", "Empatía", "Formación"]
+        tags: ["Comunicación", "Liderazgo", "Creatividad", "Empatía", "Formación", "Idiomas"]
     },
     {
         title: "Mentor en Habilidades Digitales",
         description: "Ayuda a individuos o equipos a adquirir competencias digitales, desde manejo de herramientas hasta habilidades avanzadas en tecnología.",
-        tags: ["Formación", "Innovación", "Paciencia", "Comunicación", "Motivación"]
+        tags: ["Formación", "Innovación", "Paciencia", "Comunicación", "Motivación", "Idiomas"]
     },
     {
         title: "Profesora de Cursos en Línea",
         description: "Crea y/o enseña cursos en línea en plataformas educativas, compartiendo conocimientos y habilidades en diversas áreas temáticas.",
-        tags: ["Formación", "Empatía", "Comunicación", "Estrategia"]
+        tags: ["Formación", "Empatía", "Comunicación", "Estrategia", "Idiomas"]
     },
     {
         title: "Coach de Carrera Profesional",
@@ -165,7 +165,7 @@ const careersData = [
         tags: ["Gestión", "Organización", "Trabajo en Equipo", "Liderazgo", "Resolución de Problemas"]
     },
     {
-        title: "Consultora de Negocios",
+        title: "Consultoría de Negocios",
         description: "Ofrece asesoramiento estratégico a las empresas para mejorar su eficiencia, productividad y rentabilidad. También puede ser asesorías contables, legales, etc, dependiendo tu especialidad.",
         tags: ["Estrategia", "Análisis", "Liderazgo", "Negociación", "Toma de Decisiones"]
     },
@@ -183,5 +183,25 @@ const careersData = [
         title: "Content Strategist",
         description: "Se especializa en planificar, crear y gestionar contenido estratégico que cumpla objetivos específicos, como informar, atraer usuarios o mejorar la conversión. Trabaja en el desarrollo de guías de estilo, calendarios editoriales y estrategias para diferentes canales.",
         tags: ["Creatividad", "Estrategia", "Narrativa", "Comunicación", "Análisis"]
+    },
+    {
+        title: "Coordinador de Eventos",
+        description: "Organiza y gestiona eventos turísticos o corporativos, como retiros, congresos, experiencias o escapadas temáticas, desde la planificación hasta la ejecución, todo de forma remota.",
+        tags: ["Organización", "Gestión", "Comunicación", "Turismo", "Atención al Detalle", "Idiomas"]
+    },
+    {
+        title: "Instructor de Idioma",
+        description: "Enseña idiomas en línea a viajeros, trabajadores del turismo o empresas, adaptando los contenidos a contextos culturales y profesionales.",
+        tags: ["Comunicación", "Formación", "Empatía", "Turismo", "Idiomas"]
+    },
+    {
+        title: "Agente de Viajes",
+        description: "Asesora a personas o grupos sobre destinos, itinerarios y reservas, diseñando viajes personalizados y gestionando todo el proceso en línea.",
+        tags: ["Planificación", "Atención al Cliente", "Turismo", "Resolución de Problemas", "Organización", "Idiomas"]
+    },
+    {
+        title: "Recepcionista Remoto",
+        description: "Atiende consultas de huéspedes y gestiona reservas para hoteles, hostales o propiedades turísticas, brindando soporte remoto vía email, chat o teléfono.",
+        tags: ["Atención al Cliente", "Comunicación", "Resolución de Problemas", "Turismo", "Gestión", "Idiomas"]
     }
 ];

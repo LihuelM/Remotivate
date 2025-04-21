@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
             careersContainer.appendChild(careerItem);
         });
 
-        observeFadeIns(); // <-- IMPORTANTE para animar las nuevas tarjetas
+        observeFadeIns(); 
     }
 
     renderTags();
@@ -138,10 +138,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Relación entre categorías y tags relevantes
     const categoryTagsMap = {
-        "Habilidades Sociales y Organizativas": ["Gestión", "Organización", "Liderazgo", "Trabajo en Equipo"],
-        "Comunicación y Estrategias de Ventas": ["Comunicación", "Negociación", "Motivación", "Persuasión", "Orientación a Resultados"],
+        "Habilidades Sociales y Organizativas": ["Gestión", "Organización", "Liderazgo", "Trabajo en Equipo", "Turismo"],
+        "Comunicación, Negocios, Marketing, Emprendimiento": ["Comunicación", "Negociación", "Motivación", "Persuasión", "Orientación a Resultados"],
         "Innovación, Tecnología y/o Procesamiento de Datos": ["Innovación", "Análisis", "Optimización", "Resolución de Problemas", "Lógica", "Seguridad"],
-        "Creatividad y Expresión Artística": ["Creatividad", "Narrativa", "Diseño", "Percepción Visual", "Observación"],
+        "Creatividad, Expresión Artística y Diseño": ["Creatividad", "Narrativa", "Diseño", "Percepción Visual", "Observación"],
         "Enfoque en Educación y Formación": ["Formación", "Empatía", "Comunicación", "Motivación"],
         "Pensamiento Analítico y Estratégicas": ["Capacidad de Analisis", "Pensamiento Crítico", "Estrategia", "Toma de Decisiones"]
       };
@@ -179,5 +179,29 @@ if (target) {
 
         });
       });
+
+      //Lleva a los cursos relacionados
+      document.querySelectorAll('.intro-card .actions button:nth-child(2)').forEach(button => {
+        button.addEventListener('click', event => {
+          const card = event.target.closest('.intro-card');
+          const category = card.getAttribute('data-category');
+      
+          // Mapa de categorías → id de carrusel
+          const trainingMap = {
+            "Habilidades Sociales y Organizativas": "habilidades_sociales_y_organizativas",
+            "Comunicación, Negocios, Marketing, Emprendimiento": "negocios_marketing_emprendimiento",
+            "Innovación, Tecnología y/o Procesamiento de Datos": "tecnologia_programacion",
+            "Creatividad, Expresión Artística y Diseño": "creativos_diseño",
+            "Enfoque en Educación y Formación": "educacion_y_formacion",
+            "Pensamiento Analítico y Estratégicas": "educacion_y_formacion"
+          };
+      
+          const sectionId = trainingMap[category];
+          if (sectionId) {
+            window.location.href = `training.html#${sectionId}`;
+          }
+        });
+      });
+      
       
 });
