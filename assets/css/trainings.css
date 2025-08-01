@@ -1,151 +1,179 @@
-.carousel-section {
-  margin: 50px 0;
-}
-
-.carousel-wrapper {
-  display: flex;
-  align-items: center;
-  position: relative;
-  gap: 10px;
-}
-
-.carousel-btn {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #e44c65;
-  cursor: pointer;
-  z-index: 2;
-  padding: 0 20px;
-  user-select: none;
-  transition: transform 0.3s;
-}
-
-.carousel-btn:hover {
-  transform: scale(1.2);
-}
-
-.carousel-track-wrapper {
-  overflow: hidden;
-  width: 100%;
-}
-
-.carousel-track {
-  display: flex;
-  gap: 20px;
-  will-change: transform;
-  transition: transform 0.2s ease-out;
-}
-
-.job-card {
-  flex: 0 0 auto;
-  width: 260px;
-  height: 370px;
+.training-2col {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  background-color: rgba(255, 255, 255, 0.03); /* fondo sutil */
+  border: 1px solid #e44c65; /* borde principal */
   border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  background-color: rgba(111, 108, 108, 0.13);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
+  padding: 2rem;
+  margin-top: 3rem;
 }
 
-.job-card:hover {
+/* Sidebar */
+.training-sidebar {
+  border-right: 1px solid #e44c65;
+  padding-right: 1rem;
+}
+
+.training-sidebar h3 {
+  font-size: 1.2rem;
+  color: #e44c65;
+  margin-bottom: 1rem;
+}
+
+#category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-item {
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #ccc;
+  transition: background 0.2s, color 0.2s;
+}
+
+.category-item:hover,
+.category-item.active {
+  background-color:rgba(255, 255, 255, 0.05);;
+  color: white;
+}
+
+/* Columna derecha */
+.training-main {
+  display: grid;
+  grid-template-rows: auto 220px;
+  gap: 1rem;
+}
+
+/* Galería */
+.training-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  align-items: start;
+  padding-right: 0.5rem;
+}
+
+.training-gallery img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease-in-out;
+}
+
+.training-gallery img:hover {
   transform: scale(1.05);
 }
 
-.job-card img {
-  width: 100%;
-  height: 30%;
-  object-fit: cover;
-}
-
-.card-info {
-  padding: 15px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 70%;
-  font-size: 0.85em;
-}
-
-.card-info h1 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-.card-info p {
-  margin: 5px 0;
-  line-height: 1.5;
+/* Detalle */
+.training-details {
+  padding: 1rem;
+  color: #ddd;
+  font-size: 0.95rem;
+  font-weight: 600;
+  overflow-y: auto;
   text-align: center;
 }
 
-.btn-card {
-  margin-top: auto;
-  align-self: center;
-  padding: 6px 12px;
-  background-color: #e44c65;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: .8em;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s;
+.training-details .details-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: left;
+  flex-wrap: wrap;
 }
 
-.btn-card:hover {
+.training-details img {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.training-details .details-content {
+  max-width: 550px;
+  flex: 1;
+}
+
+.training-details h3 {
+  font-size: 1.2rem;
+  color: #e44c65;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.training-details p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.training-details .btn-card {
+    margin-top: 1rem;
+    color: #e44c65;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.training-details .btn-card:hover {
   background-color: white;
   color: #e44c65;
+  border: 1px solid #e44c65;
 }
 
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  gap: 8px;
+.training-gallery img.selected {
+  outline: 1px solid #e44c65;
+  outline-offset: 3px;
+  border-radius: 10px;
 }
 
-.carousel-dot {
-  width: 10px;
-  height: 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s;
-  cursor: pointer;
-}
+/* Responsive */
+@media (max-width: 992px) {
+  .training-2col {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
 
-.carousel-dot.active {
-  background-color: #e44c65;
-}
+  .training-sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e44c65;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
 
-@media (max-width: 1024px) {
-  .job-card {
-    width: 240px;
+  .training-main {
+    grid-template-rows: auto auto;
   }
 }
+
 
 @media (max-width: 768px) {
-  .carousel-btn {
-    display: none;
+  .training-gallery {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .job-card {
-    width: 220px;
+  .category-item {
+    font-size: 0.95rem;
   }
 
-  .carousel-track-wrapper {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+  .training-details h3 {
+    font-size: 1.1rem;
   }
+}
 
-  .carousel-track {
-    scroll-snap-type: x mandatory;
-  }
-
-  .job-card {
-    scroll-snap-align: center;
+@media (max-width: 580px) {
+  .training-gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
