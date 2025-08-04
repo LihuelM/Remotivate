@@ -145,15 +145,7 @@ const tecnologia_programacion = [
       costo: "Cursos gratuitos; certificaciones de pago.",
       certificaciones: "Sí, ofrece certificaciones.",
       link: "https://www.facebook.co/business/learn",
-      image: "https://source.unsplash.com/300x400/?meta,marketing"
-    },
-    {
-      title: "Google Actívate",
-      description: "Programa de Google que ofrece cursos gratuitos en habilidades digitales, marketing online y desarrollo profesional.",
-      costo: "Cursos gratuitos.",
-      certificaciones: "Sí, ofrece certificaciones.",
-      link: "https://grow.google/intl/es",
-      image: "https://source.unsplash.com/300x400/?google,digital"
+      image: "images/training-cards/metaBlueprint.jpg"
     },
     {
       title: "Google Skillshop",
@@ -161,7 +153,7 @@ const tecnologia_programacion = [
       costo: "Cursos gratuitos.",
       certificaciones: "Sí, ofrece certificaciones.",
       link: "https://skillshop.withgoogle.com/",
-      image: "https://source.unsplash.com/300x400/?google,tools"
+      image: "images/training-cards/googleSkill.jpg"
     },
     {
       title: "LinkedIn Learning",
@@ -169,7 +161,15 @@ const tecnologia_programacion = [
       costo: "Suscripción de pago; prueba gratuita disponible.",
       certificaciones: "Sí, ofrece certificaciones.",
       link: "https://www.linkedin.com/learning",
-      image: "https://source.unsplash.com/300x400/?linkedin,learning"
+      image: "images/training-cards/linkedin.jpg"
+    },
+    {
+      title: "Google Actívate",
+      description: "Programa de Google que ofrece cursos gratuitos en habilidades digitales, marketing online y desarrollo profesional.",
+      costo: "Cursos gratuitos.",
+      certificaciones: "Sí, ofrece certificaciones.",
+      link: "https://grow.google/intl/es",
+      image: "images/training-cards/google.jpg"
     },
     {
       title: "PLATZI",
@@ -180,6 +180,14 @@ const tecnologia_programacion = [
       image: "images/training-cards/platzi.jpg"
     },
     {
+      title: "GCFGlobal",
+      description: "Plataforma que ofrece cursos gratuitos en tecnología, matemáticas y habilidades para la vida.",
+      costo: "Cursos gratuitos.",
+      certificaciones: "No especificado.",
+      link: "https://edu.gcfglobal.org/es/",
+      image: "images/training-cards/gcfGlobal.jpg"
+    },
+    {
       title: "EDTEAM",
       description: "Plataforma educativa que se centra en cursos de tecnología, inglés, diseño y emprendimiento.",
       costo: "Cursos gratuitos y pagos.",
@@ -187,6 +195,7 @@ const tecnologia_programacion = [
       link: "https://ed.team/",
       image: "images/training-cards/EDteam.png"
     },
+    
   ];
   //Hay que desarmar estos dos
   const habilidades_generales_y_profesionales = [
@@ -196,7 +205,7 @@ const tecnologia_programacion = [
       costo: "Cursos gratuitos.",
       certificaciones: "No especificado.",
       link: "https://edu.gcfglobal.org/es/",
-      image: "https://source.unsplash.com/300x400/?skills,digital"
+      image: "images/training-cards/gcfGlobal.jpg"
     },
     {
       title: "Skilio",
@@ -281,6 +290,14 @@ const tecnologia_programacion = [
       image: "https://source.unsplash.com/300x400/?university,online"
     },
     {
+      title: "GCFGlobal",
+      description: "Plataforma que ofrece cursos gratuitos en tecnología, matemáticas y habilidades para la vida.",
+      costo: "Cursos gratuitos.",
+      certificaciones: "No especificado.",
+      link: "https://edu.gcfglobal.org/es/",
+      image: "images/training-cards/gcfGlobal.jpg"
+    },
+    {
       title: "Edutin Academy",
       description: "Academia en línea que brinda cursos en múltiples disciplinas, desde tecnología hasta negocios.",
       costo: "Cursos gratuitos y pagos.",
@@ -338,6 +355,30 @@ const tecnologia_programacion = [
       certificaciones: "Sí, ofrece.",
       link: "https://www.coursera.org/",
       image: "https://source.unsplash.com/300x400/?university,online"
+    },
+    {
+      title: "CLASEFLIX",
+      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
+      costo: "No especificado.",
+      certificaciones: "No especificado.",
+      link: "https://claseflix.com/",
+      image: "https://source.unsplash.com/300x400/?online,learning"
+    },
+    {
+      title: "GCFGlobal",
+      description: "Plataforma que ofrece cursos gratuitos en tecnología, matemáticas y habilidades para la vida.",
+      costo: "Cursos gratuitos.",
+      certificaciones: "No especificado.",
+      link: "https://edu.gcfglobal.org/es/",
+      image: "images/training-cards/gcfGlobal.jpg"
+    },
+    {
+      title: "PLATZI",
+      description: "Plataforma de educación en línea que ofrece escuelas de tecnología, inglés, diseño, marketing y negocios.",
+      costo: "Cursos gratuitos y pagos, posee varios planes.",
+      certificaciones: "Sí, ofrece.",
+      link: "https://platzi.com/",
+      image: "images/training-cards/platzi.jpg"
     }
   ];
   const habilidades_sociales_y_organizativas = [

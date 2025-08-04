@@ -52,10 +52,12 @@
 /* Galería */
 .training-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 1rem;
-  align-items: start;
-  padding-right: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .training-gallery img {
