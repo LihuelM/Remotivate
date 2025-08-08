@@ -27,30 +27,31 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function renderTags() {
-        tagsContainer.innerHTML = "";
-        const allTags = new Set(careersData.flatMap(career => career.tags));
+  tagsContainer.innerHTML = "";
+  const allTags = new Set(careersData.flatMap(career => career.tags));
 
-        allTags.forEach(tag => {
-            const tagBtn = document.createElement("button");
-            tagBtn.textContent = tag;
-            tagBtn.addEventListener("click", () => toggleTag(tag, tagBtn));
-            tagsContainer.appendChild(tagBtn);
-        });
+  allTags.forEach(tag => {
+      const tagBtn = document.createElement("button");
+      tagBtn.textContent = tag;
+      tagBtn.classList.add("neomorph-btn");           // <--- NUEVO
+      tagBtn.addEventListener("click", () => toggleTag(tag, tagBtn));
+      tagsContainer.appendChild(tagBtn);
+  });
 
-        // Botón "Limpiar selección"
-        const clearBtn = document.createElement("button");
-        clearBtn.classList.add("clear-button");
-        clearBtn.textContent = "Limpiar selección";
-        clearBtn.addEventListener("click", clearSelection);
+  // Botón "Limpiar selección"
+  const clearBtn = document.createElement("button");
+  clearBtn.classList.add("neomorph-btn","primary");   // <--- NUEVO
+  clearBtn.textContent = "Limpiar selección";
+  clearBtn.addEventListener("click", clearSelection);
 
-        const icon = document.createElement("img");
-        icon.src = "images/trash.svg";
-        icon.alt = "Limpiar selección";
-        icon.classList.add("clear-icon");
+  const icon = document.createElement("img");
+  icon.src = "images/trash.svg";
+  icon.alt = "Limpiar selección";
 
-        clearBtn.appendChild(icon);
-        tagsContainer.appendChild(clearBtn);
-    }
+  clearBtn.appendChild(icon);
+  tagsContainer.appendChild(clearBtn);
+}
+
 
     function toggleTag(tag, button) {
         if (selectedTags.has(tag)) {

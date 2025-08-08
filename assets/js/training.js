@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const categorias = {
     tecnologia_programacion: {
-      titulo: "Innovación, Tecnología y/o Procesamiento de Datos",
+      titulo: "Innovación, Tecnología, Procesamiento de Datos",
       data: tecnologia_programacion
     },
     creativos_diseño: {
-      titulo: "Creatividad, Expresión Artística y Diseño",
+      titulo: "Creatividad, Expresión Artística, Diseño",
       data: creativos_diseño
     },
     negocios_marketing_emprendimiento: {
@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
       data: negocios_marketing_emprendimiento
     },
     habilidades_sociales_y_organizativas: {
-      titulo: "Habilidades Sociales y Organizativas",
+      titulo: "Habilidades Sociales, Organizativas, Administrativas",
       data: habilidades_sociales_y_organizativas
     },
     educacion_y_formacion: {
-      titulo: "Formación, capacitación, & Educación",
+      titulo: "Formación, Capacitación, Educación",
       data: educacion_y_formacion
     },
     idiomas: {

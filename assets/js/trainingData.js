@@ -24,6 +24,14 @@ const tecnologia_programacion = [
       image: "images/training-cards/OpBoot3.jpg"
     },
     {
+      title: "Dostin Hurtado",
+      description: "Canal y plataforma educativa con cursos gratuitos en administración, tecnología, diseño.",
+      costo: "Cursos gratuitos.",
+      certificaciones: "No especificado.",
+      link: "https://dostinhurtado.com/site/",
+      image: "images/training-cards/DostinHurtado.jpg"
+    },
+    {
       title: "freeCodeCamp",
       description: "Comunidad que ofrece cursos gratuitos en programación y desarrollo web.",
       costo: "Cursos gratuitos.",
@@ -87,6 +95,22 @@ const tecnologia_programacion = [
         link: "https://www.frontendmentor.io/",
         image: "images/training-cards/frontMentor.jpg"
       },
+      {
+      title: "CLASEFLIX",
+      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
+      costo: "No especificado.",
+      certificaciones: "No especificado.",
+      link: "https://claseflix.com/",
+      image: "images/training-cards/claseflix.jpg"
+    },
+      {
+      title: "NETZUN",
+      description: "Plataforma que ofrece cursos y especializaciones en línea en diversas áreas, enfocándose en el desarrollo profesional y personal.",
+      costo: "Cursos y especializaciones pagos",
+      certificaciones: "No especificado.",
+      link: "https://netzun.com/",
+      image: "images/training-cards/netzun.jpg"
+    }
   ];
   const creativos_diseño = [
     {
@@ -95,7 +119,7 @@ const tecnologia_programacion = [
       costo: "Cursos de pago; ocasionalmente ofrece cursos gratuitos.",
       certificaciones: "Sí, ofrece certificaciones.",
       link: "https://www.domestika.org/",
-      image: "images/training-cards/domestika.jpg"
+      image: "images/training-cards/domestika.images/training-cards/netzun.jpg"
     },
     {
       title: "Canva Design School",
@@ -137,6 +161,30 @@ const tecnologia_programacion = [
       link: "https://desafiolatam.com/cursos_gratuitos/?utm_source=linkedin&utm_medium=embajadores_charlie",
       image: "images/training-cards/desafioLatam.jpg"
     },
+    {
+      title: "Dostin Hurtado",
+      description: "Canal y plataforma educativa con cursos gratuitos en administración, tecnología, diseño.",
+      costo: "Cursos gratuitos.",
+      certificaciones: "No especificado.",
+      link: "https://dostinhurtado.com/site/",
+      image: "images/training-cards/DostinHurtado.jpg"
+    },
+    {
+      title: "CLASEFLIX",
+      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
+      costo: "No especificado.",
+      certificaciones: "No especificado.",
+      link: "https://claseflix.com/",
+      image: "images/training-cards/claseflix.jpg"
+    },
+    {
+      title: "NETZUN",
+      description: "Plataforma que ofrece cursos y especializaciones en línea en diversas áreas, enfocándose en el desarrollo profesional y personal.",
+      costo: "Cursos y especializaciones pagos",
+      certificaciones: "No especificado.",
+      link: "https://netzun.com/",
+      image: "images/training-cards/netzun.jpg"
+    }
   ];
   const negocios_marketing_emprendimiento = [
     {
@@ -195,17 +243,21 @@ const tecnologia_programacion = [
       link: "https://ed.team/",
       image: "images/training-cards/EDteam.png"
     },
-    
-  ];
-  //Hay que desarmar estos dos
-  const habilidades_generales_y_profesionales = [
     {
-      title: "GCFGlobal",
-      description: "Plataforma que ofrece cursos gratuitos en tecnología, matemáticas y habilidades para la vida.",
-      costo: "Cursos gratuitos.",
+      title: "NETZUN",
+      description: "Plataforma que ofrece cursos y especializaciones en línea en diversas áreas, enfocándose en el desarrollo profesional y personal.",
+      costo: "Cursos y especializaciones pagos",
       certificaciones: "No especificado.",
-      link: "https://edu.gcfglobal.org/es/",
-      image: "images/training-cards/gcfGlobal.jpg"
+      link: "https://netzun.com/",
+      image: "images/training-cards/netzun.jpg"
+    },
+    {
+      title: "CLASEFLIX",
+      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
+      costo: "No especificado.",
+      certificaciones: "No especificado.",
+      link: "https://claseflix.com/",
+      image: "images/training-cards/claseflix.jpg"
     },
     {
       title: "Skilio",
@@ -213,24 +265,15 @@ const tecnologia_programacion = [
       costo: "No especificado.",
       certificaciones: "No especificado.",
       link: "https://skilio.com/yt",
-      image: "https://source.unsplash.com/300x400/?softskills,coaching"
-    },
-    {
-      title: "Dostin Hurtado",
-      description: "Canal y plataforma educativa con cursos gratuitos en administración, tecnología, diseño.",
-      costo: "Cursos gratuitos.",
-      certificaciones: "No especificado.",
-      link: "https://dostinhurtado.com/site/",
-      image: "https://source.unsplash.com/300x400/?office,teaching"
-    },
-    {
-      title: "NETZUN",
-      description: "Plataforma que ofrece cursos en línea gratuitos en diversas áreas, enfocándose en el desarrollo profesional y personal.",
-      costo: "Cursos gratuitos disponibles.",
-      certificaciones: "No especificado.",
-      link: "https://netzun.com/",
-      image: "https://source.unsplash.com/300x400/?online,learning"
-    },
+      image: "images/training-cards/skilio.jpg"
+    }
+    
+  ];
+  //Hay que desarmar estos dos
+  const habilidades_generales_y_profesionales = [
+    
+    
+    
     {
       title: "CursosGratuitos.es",
       description: "Agrega y enlaza cursos gratuitos de distintas plataformas educativas.",
@@ -255,14 +298,7 @@ const tecnologia_programacion = [
       link: "https://aprendergratis.es/",
       image: "https://source.unsplash.com/300x400/?free,learning"
     },
-    {
-      title: "CLASEFLIX",
-      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
-      costo: "No especificado.",
-      certificaciones: "No especificado.",
-      link: "https://claseflix.com/",
-      image: "https://source.unsplash.com/300x400/?online,learning"
-    },
+    
     {
       title: "Alison",
       description: "Plataforma global de aprendizaje en línea que ofrece cursos gratuitos en áreas como tecnología, negocios, salud, idiomas, desarrollo personal, y más. Ideal para mejorar habilidades profesionales o aprender algo nuevo.",
@@ -362,7 +398,7 @@ const tecnologia_programacion = [
       costo: "No especificado.",
       certificaciones: "No especificado.",
       link: "https://claseflix.com/",
-      image: "https://source.unsplash.com/300x400/?online,learning"
+      image: "images/training-cards/claseflix.jpg"
     },
     {
       title: "GCFGlobal",
@@ -383,16 +419,59 @@ const tecnologia_programacion = [
   ];
   const habilidades_sociales_y_organizativas = [
     {
-
+      title: "GCFGlobal",
+      description: "Plataforma que ofrece cursos gratuitos en tecnología, matemáticas y habilidades para la vida.",
+      costo: "Cursos gratuitos.",
+      certificaciones: "No especificado.",
+      link: "https://edu.gcfglobal.org/es/",
+      image: "images/training-cards/gcfGlobal.jpg"
+    },
+    {
+      title: "NETZUN",
+      description: "Plataforma que ofrece cursos y especializaciones en línea en diversas áreas, enfocándose en el desarrollo profesional y personal.",
+      costo: "Cursos y especializaciones pagos",
+      certificaciones: "No especificado.",
+      link: "https://netzun.com/",
+      image: "images/training-cards/netzun.jpg"
+    },
+    {
+      title: "Skilio",
+      description: "Plataforma que ofrece herramientas para el desarrollo de habilidades blandas y seguimiento del crecimiento personal.",
+      costo: "No especificado.",
+      certificaciones: "No especificado.",
+      link: "https://skilio.com/yt",
+      image: "images/training-cards/skilio.jpg"
+    },
+    {
+      title: "Dostin Hurtado",
+      description: "Canal y plataforma educativa con cursos gratuitos en administración, tecnología, diseño.",
+      costo: "Cursos gratuitos.",
+      certificaciones: "No especificado.",
+      link: "https://dostinhurtado.com/site/",
+      image: "images/training-cards/DostinHurtado.jpg"
+    },
+    {
+      title: "CLASEFLIX",
+      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
+      costo: "No especificado.",
+      certificaciones: "No especificado.",
+      link: "https://claseflix.com/",
+      image: "images/training-cards/claseflix.jpg"
     }
   ]
   const educacion_y_formacion = [
     {
-
+      title: "CLASEFLIX",
+      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
+      costo: "No especificado.",
+      certificaciones: "No especificado.",
+      link: "https://claseflix.com/",
+      image: "images/training-cards/claseflix.jpg"
     }
   ]
   const habilidades_analiticas_y_estrategicas = [
     {
+      
 
     }
   ]
