@@ -64,12 +64,12 @@ const tecnologia_programacion = [
       image: "images/training-cards/mouredev.jpg"
     },
     {
-      title: "Codecademy",
-      description: "Cursos interactivos para aprender programación, desarrollo web, ciencia de datos y más.",
-      costo: "Planes gratuitos y pagos.",
-      certificaciones: "Sí, ofrece certificaciones en el plan pro.",
-      link: "https://www.codecademy.com/",
-      image: "images/training-cards/codeCademy.jpg"
+      title: "EGG",
+      description: "Empresa argentina que ofrece becas para aprender a programar y desarrollarse en tecnología.",
+      costo: "Cursos gratuitos y de pago, posee sistema de Becas",
+      certificaciones: "No especificado.",
+      link: "https://eggcooperation.com/",
+      image: "images/training-cards/egg.jpg"
     },
     {
       title: "DataCamp",
@@ -88,6 +88,14 @@ const tecnologia_programacion = [
       image: "images/training-cards/desafioLatam.jpg"
     },
     {
+      title: "Codecademy",
+      description: "Cursos interactivos para aprender programación, desarrollo web, ciencia de datos y más.",
+      costo: "Planes gratuitos y pagos.",
+      certificaciones: "Sí, ofrece certificaciones en el plan pro.",
+      link: "https://www.codecademy.com/",
+      image: "images/training-cards/codeCademy.jpg"
+    },
+    {
         title: "Frontend Mentor",
         description: "Plataforma que ofrece desafíos prácticos para mejorar habilidades en frontend.",
         costo: "Desafíos gratuitos y de pago.",
@@ -103,13 +111,37 @@ const tecnologia_programacion = [
       link: "https://claseflix.com/",
       image: "images/training-cards/claseflix.jpg"
     },
-      {
+    {
+      title: "Alison",
+      description: "Plataforma global de aprendizaje en línea que ofrece más de 5.500 cursos gratuitos en áreas desde tecnología, negocios, salud, idiomas, desarrollo personal, y más.",
+      costo: "Cursos gratuitos; certificados y diplomas opcionales de pago.",
+      certificaciones: "Sí, ofrece certificados y diplomas (algunos pagos).",
+      link: "https://alison.com/",
+      image: "images/training-cards/alison.jpg"
+    },
+    {
       title: "NETZUN",
       description: "Plataforma que ofrece cursos y especializaciones en línea en diversas áreas, enfocándose en el desarrollo profesional y personal.",
       costo: "Cursos y especializaciones pagos",
       certificaciones: "No especificado.",
       link: "https://netzun.com/",
       image: "images/training-cards/netzun.jpg"
+    },
+    {
+      title: "EuroInnova",
+      description: "Plataforma de Educación Internacional online, ofrece cursos, licenciaturas, master y doctorados.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "Las licenciaturas, master y doctoraados.",
+      link: "https://www.euroinnova.com/cursos-gratis",
+      image: "images/training-cards/euroInnova.jpg"
+    },
+    {
+      title: "aprendergratis",
+      description: "Portal que recopila cursos gratuitos y pagos, online. Posee más de 35 categorías.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "No especificado.",
+      link: "https://aprendergratis.es",
+      image: "images/training-cards/aprenderGratisEs.jpg"
     }
   ];
   const creativos_diseño = [
@@ -128,6 +160,14 @@ const tecnologia_programacion = [
       certificaciones: "No especificado.",
       link: "https://www.canva.com/designschool/",
       image: "images/training-cards/canva.jpg"
+    },
+    {
+      title: "EuroInnova",
+      description: "Plataforma de Educación Internacional online, ofrece cursos, licenciaturas, master y doctorados.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "Las licenciaturas, master y doctoraados.",
+      link: "https://www.euroinnova.com/cursos-gratis",
+      image: "images/training-cards/euroInnova.jpg"
     },
     {
       title: "Skillshare",
@@ -169,6 +209,7 @@ const tecnologia_programacion = [
       link: "https://dostinhurtado.com/site/",
       image: "images/training-cards/DostinHurtado.jpg"
     },
+    
     {
       title: "CLASEFLIX",
       description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
@@ -184,6 +225,14 @@ const tecnologia_programacion = [
       certificaciones: "No especificado.",
       link: "https://netzun.com/",
       image: "images/training-cards/netzun.jpg"
+    },
+    {
+      title: "aprendergratis",
+      description: "Portal que recopila cursos gratuitos y pagos, online. Posee más de 35 categorías.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "No especificado.",
+      link: "https://aprendergratis.es",
+      image: "images/training-cards/aprenderGratisEs.jpg"
     }
   ];
   const negocios_marketing_emprendimiento = [
@@ -236,20 +285,20 @@ const tecnologia_programacion = [
       image: "images/training-cards/gcfGlobal.jpg"
     },
     {
-      title: "EDTEAM",
-      description: "Plataforma educativa que se centra en cursos de tecnología, inglés, diseño y emprendimiento.",
-      costo: "Cursos gratuitos y pagos.",
-      certificaciones: "Sí, ofrece.",
-      link: "https://ed.team/",
-      image: "images/training-cards/EDteam.png"
-    },
-    {
       title: "NETZUN",
       description: "Plataforma que ofrece cursos y especializaciones en línea en diversas áreas, enfocándose en el desarrollo profesional y personal.",
       costo: "Cursos y especializaciones pagos",
       certificaciones: "No especificado.",
       link: "https://netzun.com/",
       image: "images/training-cards/netzun.jpg"
+    },
+    {
+      title: "EDTEAM",
+      description: "Plataforma educativa que se centra en cursos de tecnología, inglés, diseño y emprendimiento.",
+      costo: "Cursos gratuitos y pagos.",
+      certificaciones: "Sí, ofrece.",
+      link: "https://ed.team/",
+      image: "images/training-cards/EDteam.png"
     },
     {
       title: "CLASEFLIX",
@@ -260,62 +309,208 @@ const tecnologia_programacion = [
       image: "images/training-cards/claseflix.jpg"
     },
     {
+      title: "EuroInnova",
+      description: "Plataforma de Educación Internacional online, ofrece cursos, licenciaturas, master y doctorados.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "Las licenciaturas, master y doctoraados.",
+      link: "https://www.euroinnova.com/cursos-gratis",
+      image: "images/training-cards/euroInnova.jpg"
+    },
+    {
       title: "Skilio",
       description: "Plataforma que ofrece herramientas para el desarrollo de habilidades blandas y seguimiento del crecimiento personal.",
       costo: "No especificado.",
       certificaciones: "No especificado.",
       link: "https://skilio.com/yt",
       image: "images/training-cards/skilio.jpg"
-    }
-    
-  ];
-  //Hay que desarmar estos dos
-  const habilidades_generales_y_profesionales = [
-    
-    
-    
-    {
-      title: "CursosGratuitos.es",
-      description: "Agrega y enlaza cursos gratuitos de distintas plataformas educativas.",
-      costo: "Cursos gratuitos.",
-      certificaciones: "No especificado.",
-      link: "https://cursosgratuitos.es/cursos-gratuitos-online/",
-      image: "https://source.unsplash.com/300x400/?freecourses,online"
     },
-    {
-      title: "EGG",
-      description: "Empresa argentina que ofrece becas para aprender a programar y desarrollarse en tecnología.",
-      costo: "Becas gratuitas.",
-      certificaciones: "No especificado.",
-      link: "https://eggcooperation.com/",
-      image: "https://source.unsplash.com/300x400/?students,study"
-    },
-    {
-      title: "aprendergratis",
-      description: "Portal que recopila cursos gratuitos en línea sobre programación y otras disciplinas.",
-      costo: "Cursos gratuitos.",
-      certificaciones: "No especificado.",
-      link: "https://aprendergratis.es/",
-      image: "https://source.unsplash.com/300x400/?free,learning"
-    },
-    
     {
       title: "Alison",
-      description: "Plataforma global de aprendizaje en línea que ofrece cursos gratuitos en áreas como tecnología, negocios, salud, idiomas, desarrollo personal, y más. Ideal para mejorar habilidades profesionales o aprender algo nuevo.",
+      description: "Plataforma global de aprendizaje en línea que ofrece más de 5.500 cursos gratuitos en áreas desde tecnología, negocios, salud, idiomas, desarrollo personal, y más.",
       costo: "Cursos gratuitos; certificados y diplomas opcionales de pago.",
       certificaciones: "Sí, ofrece certificados y diplomas (algunos pagos).",
       link: "https://alison.com/",
-      image: "https://source.unsplash.com/300x400/?online,learning"
+      image: "images/training-cards/alison.jpg"
+    },
+    {
+      title: "aprendergratis",
+      description: "Portal que recopila cursos gratuitos y pagos, online. Posee más de 35 categorías.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "No especificado.",
+      link: "https://aprendergratis.es",
+      image: "images/training-cards/aprenderGratisEs.jpg"
+    }
+    
+  ];
+  //Hay que agregar estos 3
+  const idiomas = [
+    {
+      title: "Coursera",
+      description: "Plataforma que colabora con universidades y organizaciones para ofrecer cursos en línea en diversas áreas.",
+      costo: "Cursos gratuitos y pagos.",
+      certificaciones: "Sí, ofrece.",
+      link: "https://www.coursera.org/",
+      image: "https://source.unsplash.com/300x400/?university,online"
+    },
+    {
+      title: "EuroInnova",
+      description: "Plataforma de Educación Internacional online, ofrece cursos, licenciaturas, master y doctorados.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "Las licenciaturas, master y doctoraados.",
+      link: "https://www.euroinnova.com/cursos-gratis",
+      image: "images/training-cards/euroInnova.jpg"
+    },
+    {
+      title: "CLASEFLIX",
+      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
+      costo: "No especificado.",
+      certificaciones: "No especificado.",
+      link: "https://claseflix.com/",
+      image: "images/training-cards/claseflix.jpg"
+    },
+    {
+      title: "GCFGlobal",
+      description: "Plataforma que ofrece cursos gratuitos en tecnología, matemáticas y habilidades para la vida.",
+      costo: "Cursos gratuitos.",
+      certificaciones: "No especificado.",
+      link: "https://edu.gcfglobal.org/es/",
+      image: "images/training-cards/gcfGlobal.jpg"
+    },
+    {
+      title: "PLATZI",
+      description: "Plataforma de educación en línea que ofrece escuelas de tecnología, inglés, diseño, marketing y negocios.",
+      costo: "Cursos gratuitos y pagos, posee varios planes.",
+      certificaciones: "Sí, ofrece.",
+      link: "https://platzi.com/",
+      image: "images/training-cards/platzi.jpg"
+    },
+    {
+      title: "Alison",
+      description: "Plataforma global de aprendizaje en línea que ofrece más de 5.500 cursos gratuitos en áreas desde tecnología, negocios, salud, idiomas, desarrollo personal, y más.",
+      costo: "Cursos gratuitos; certificados y diplomas opcionales de pago.",
+      certificaciones: "Sí, ofrece certificados y diplomas (algunos pagos).",
+      link: "https://alison.com/",
+      image: "images/training-cards/alison.jpg"
+    },
+    {
+      title: "aprendergratis",
+      description: "Portal que recopila cursos gratuitos y pagos, online. Posee más de 35 categorías.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "No especificado.",
+      link: "https://aprendergratis.es",
+      image: "images/training-cards/aprenderGratisEs.jpg"
+    }
+  ];
+  const habilidades_sociales_y_organizativas = [
+    {
+      title: "GCFGlobal",
+      description: "Plataforma que ofrece cursos gratuitos en tecnología, matemáticas y habilidades para la vida.",
+      costo: "Cursos gratuitos.",
+      certificaciones: "No especificado.",
+      link: "https://edu.gcfglobal.org/es/",
+      image: "images/training-cards/gcfGlobal.jpg"
+    },
+    {
+      title: "NETZUN",
+      description: "Plataforma que ofrece cursos y especializaciones en línea en diversas áreas, enfocándose en el desarrollo profesional y personal.",
+      costo: "Cursos y especializaciones pagos",
+      certificaciones: "No especificado.",
+      link: "https://netzun.com/",
+      image: "images/training-cards/netzun.jpg"
+    },
+    {
+      title: "EuroInnova",
+      description: "Plataforma de Educación Internacional online, ofrece cursos, licenciaturas, master y doctorados.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "Las licenciaturas, master y doctoraados.",
+      link: "https://www.euroinnova.com/cursos-gratis",
+      image: "images/training-cards/euroInnova.jpg"
+    },
+    {
+      title: "Skilio",
+      description: "Plataforma que ofrece herramientas para el desarrollo de habilidades blandas y seguimiento del crecimiento personal.",
+      costo: "No especificado.",
+      certificaciones: "No especificado.",
+      link: "https://skilio.com/yt",
+      image: "images/training-cards/skilio.jpg"
+    },
+    {
+      title: "Dostin Hurtado",
+      description: "Canal y plataforma educativa con cursos gratuitos en administración, tecnología, diseño.",
+      costo: "Cursos gratuitos.",
+      certificaciones: "No especificado.",
+      link: "https://dostinhurtado.com/site/",
+      image: "images/training-cards/DostinHurtado.jpg"
+    },
+    {
+      title: "CLASEFLIX",
+      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
+      costo: "No especificado.",
+      certificaciones: "No especificado.",
+      link: "https://claseflix.com/",
+      image: "images/training-cards/claseflix.jpg"
+    },
+    {
+      title: "Alison",
+      description: "Plataforma global de aprendizaje en línea que ofrece más de 5.500 cursos gratuitos en áreas desde tecnología, negocios, salud, idiomas, desarrollo personal, y más.",
+      costo: "Cursos gratuitos; certificados y diplomas opcionales de pago.",
+      certificaciones: "Sí, ofrece certificados y diplomas (algunos pagos).",
+      link: "https://alison.com/",
+      image: "images/training-cards/alison.jpg"
+    },
+    {
+      title: "aprendergratis",
+      description: "Portal que recopila cursos gratuitos y pagos, online. Posee más de 35 categorías.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "No especificado.",
+      link: "https://aprendergratis.es",
+      image: "images/training-cards/aprenderGratisEs.jpg"
     },
     {
       title: "Alaimo Labs",
       description: "Ofrece cursos orientados al desarrollo de habilidades sociales y organizativas.",
-      costo: "Cursos gratuitos.",
-      certificaciones: "No especificado.",
+      costo: "Algunos cursos gratuitos.",
+      certificaciones: "Sí, ofrece.",
       link: "https://alaimolabs.com/es/",
-      image: "images/training-cards/alaimoLabs.jpg"
-    },    
-  ]; 
+      image: "images/training-cards/alaimo.jpg"
+    }
+  ]
+  const educacion_y_formacion = [
+    {
+      title: "CLASEFLIX",
+      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
+      costo: "No especificado.",
+      certificaciones: "No especificado.",
+      link: "https://claseflix.com/",
+      image: "images/training-cards/claseflix.jpg"
+    },
+    {
+      title: "EuroInnova",
+      description: "Plataforma de Educación Internacional online, ofrece cursos, licenciaturas, master y doctorados.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "Las licenciaturas, master y doctoraados.",
+      link: "https://www.euroinnova.com/cursos-gratis",
+      image: "images/training-cards/euroInnova.jpg"
+    },
+    {
+      title: "aprendergratis",
+      description: "Portal que recopila cursos gratuitos y pagos, online. Posee más de 35 categorías.",
+      costo: "Cursos gratuitos y de pago.",
+      certificaciones: "No especificado.",
+      link: "https://aprendergratis.es",
+      image: "images/training-cards/aprenderGratisEs.jpg"
+    },
+    {
+      title: "Alison",
+      description: "Plataforma global de aprendizaje en línea que ofrece más de 5.500 cursos gratuitos en áreas desde tecnología, negocios, salud, idiomas, desarrollo personal, y más.",
+      costo: "Cursos gratuitos; certificados y diplomas opcionales de pago.",
+      certificaciones: "Sí, ofrece certificados y diplomas (algunos pagos).",
+      link: "https://alison.com/",
+      image: "images/training-cards/alison.jpg"
+    }
+  ]
+  
+  // Lo agregamos aparte? Habria que revisar cursos y ver si se puede agregar a otra categoria
   const academico_universitario = [
     {
       title: "Coursera",
@@ -381,98 +576,12 @@ const tecnologia_programacion = [
         link: "https://fullstackopen.com/es/",
         image: "https://source.unsplash.com/300x400/?university,code"
       },
-  ];
-  //Hay que agregar estos 3
-  const idiomas = [
-    {
-      title: "Coursera",
-      description: "Plataforma que colabora con universidades y organizaciones para ofrecer cursos en línea en diversas áreas.",
-      costo: "Cursos gratuitos y pagos.",
-      certificaciones: "Sí, ofrece.",
-      link: "https://www.coursera.org/",
-      image: "https://source.unsplash.com/300x400/?university,online"
-    },
-    {
-      title: "CLASEFLIX",
-      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
-      costo: "No especificado.",
+      {
+      title: "aprendergratis",
+      description: "Portal que recopila cursos gratuitos y pagos, online. Posee más de 35 categorías.",
+      costo: "Cursos gratuitos y de pago.",
       certificaciones: "No especificado.",
-      link: "https://claseflix.com/",
-      image: "images/training-cards/claseflix.jpg"
-    },
-    {
-      title: "GCFGlobal",
-      description: "Plataforma que ofrece cursos gratuitos en tecnología, matemáticas y habilidades para la vida.",
-      costo: "Cursos gratuitos.",
-      certificaciones: "No especificado.",
-      link: "https://edu.gcfglobal.org/es/",
-      image: "images/training-cards/gcfGlobal.jpg"
-    },
-    {
-      title: "PLATZI",
-      description: "Plataforma de educación en línea que ofrece escuelas de tecnología, inglés, diseño, marketing y negocios.",
-      costo: "Cursos gratuitos y pagos, posee varios planes.",
-      certificaciones: "Sí, ofrece.",
-      link: "https://platzi.com/",
-      image: "images/training-cards/platzi.jpg"
+      link: "https://aprendergratis.es",
+      image: "images/training-cards/aprenderGratisEs.jpg"
     }
   ];
-  const habilidades_sociales_y_organizativas = [
-    {
-      title: "GCFGlobal",
-      description: "Plataforma que ofrece cursos gratuitos en tecnología, matemáticas y habilidades para la vida.",
-      costo: "Cursos gratuitos.",
-      certificaciones: "No especificado.",
-      link: "https://edu.gcfglobal.org/es/",
-      image: "images/training-cards/gcfGlobal.jpg"
-    },
-    {
-      title: "NETZUN",
-      description: "Plataforma que ofrece cursos y especializaciones en línea en diversas áreas, enfocándose en el desarrollo profesional y personal.",
-      costo: "Cursos y especializaciones pagos",
-      certificaciones: "No especificado.",
-      link: "https://netzun.com/",
-      image: "images/training-cards/netzun.jpg"
-    },
-    {
-      title: "Skilio",
-      description: "Plataforma que ofrece herramientas para el desarrollo de habilidades blandas y seguimiento del crecimiento personal.",
-      costo: "No especificado.",
-      certificaciones: "No especificado.",
-      link: "https://skilio.com/yt",
-      image: "images/training-cards/skilio.jpg"
-    },
-    {
-      title: "Dostin Hurtado",
-      description: "Canal y plataforma educativa con cursos gratuitos en administración, tecnología, diseño.",
-      costo: "Cursos gratuitos.",
-      certificaciones: "No especificado.",
-      link: "https://dostinhurtado.com/site/",
-      image: "images/training-cards/DostinHurtado.jpg"
-    },
-    {
-      title: "CLASEFLIX",
-      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
-      costo: "No especificado.",
-      certificaciones: "No especificado.",
-      link: "https://claseflix.com/",
-      image: "images/training-cards/claseflix.jpg"
-    }
-  ]
-  const educacion_y_formacion = [
-    {
-      title: "CLASEFLIX",
-      description: "Plataforma que ofrece cursos en línea en diversas áreas del conocimiento.",
-      costo: "No especificado.",
-      certificaciones: "No especificado.",
-      link: "https://claseflix.com/",
-      image: "images/training-cards/claseflix.jpg"
-    }
-  ]
-  const habilidades_analiticas_y_estrategicas = [
-    {
-      
-
-    }
-  ]
-  
