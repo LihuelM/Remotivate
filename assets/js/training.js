@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
     idiomas: {
       titulo: "Idiomas",
       data: idiomas
+    },
+    universitarios: {
+      titulo: "Academicos, Universitario",
+      data: academico_universitario
     }
   };
 

@@ -149,6 +149,7 @@ input, select, textarea {
 		font-size: 1.7em;
 		line-height: 1.5em;
 		letter-spacing: -0.025em;
+		margin-bottom: 2em;
 	}
 
 	h3 {
@@ -2180,19 +2181,22 @@ input, select, textarea {
 	}
 
 	header.major {
-		margin: 0 auto 4em auto;
+		margin: 0 auto 1em auto;
     	position: relative;
     	text-align: center;
     	width: 80%;
 	}
 
-		header.major:after {
+		#tags-container .major:after,
+		#careers-container .major:after,
+		 header.major:after{
 			background: #e44c65;
 			content: '';
 			display: inline-block;
 			height: 0.2em;
 			max-width: 20em;
 			width: 75%;
+			margin-bottom: 2em;
 		}
 
 	footer.major {
@@ -2488,6 +2492,8 @@ input, select, textarea {
 
 			.icon.major.alt {
 				text-decoration: none;
+				display: flex ;
+    			gap: 20px;
 			}
 
 				.icon.major.alt:before {
@@ -3198,7 +3204,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0;
+		padding: 4.5em 0 4em 0;
 	}
 
 		.wrapper.style2 {

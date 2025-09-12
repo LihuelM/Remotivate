@@ -89,30 +89,34 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        filteredCareers.forEach(career => {
+                filteredCareers.forEach(career => {
             const careerItem = document.createElement("div");
             careerItem.classList.add("career-item", "fade-in");
 
-            careerItem.innerHTML = `<h4>${career.title}</h4>`;
+            const title = document.createElement("h4");
+            title.textContent = career.title;
 
             const descriptionDiv = document.createElement("div");
             descriptionDiv.classList.add("career-description");
             descriptionDiv.textContent = career.description;
             descriptionDiv.style.display = "none";
 
+            // Agregamos elementos al contenedor
+            careerItem.appendChild(title);
             careerItem.appendChild(descriptionDiv);
-            careerItem.addEventListener("click", () => {
-                document.querySelectorAll(".career-description").forEach(desc => {
-                    if (desc !== descriptionDiv) {
-                        desc.style.display = "none";
-                    }
-                });
 
-                descriptionDiv.style.display = descriptionDiv.style.display === "block" ? "none" : "block";
+            // Nuevo comportamiento: clic en toda la tarjeta (no solo en el título)
+            careerItem.addEventListener("click", (e) => {
+                // Evitar conflicto si algún día agregás un botón dentro
+                if (e.target.tagName === "BUTTON") return;
+
+                const isOpen = descriptionDiv.style.display === "block";
+                descriptionDiv.style.display = isOpen ? "none" : "block";
             });
 
             careersContainer.appendChild(careerItem);
         });
+
 
         observeFadeIns(); 
     }
@@ -172,14 +176,14 @@ document.addEventListener("DOMContentLoaded", function () {
           filterCareers();
           
           const target = document.getElementById("careers-container");
-if (target) {
-  const offset = 200;
-  const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
-  window.scrollTo({ top: y, behavior: "smooth" });
-}
+            if (target) {
+              const offset = 200;
+              const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+              window.scrollTo({ top: y, behavior: "smooth" });
+            }           
 
-        });
-      });
+             });
+          });
 
       //Lleva a los cursos relacionados
       document.querySelectorAll('.intro-card .actions button:nth-child(2)').forEach(button => {
