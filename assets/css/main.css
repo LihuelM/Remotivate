@@ -4116,3 +4116,56 @@ input, select, textarea {
 					}
 
 	}
+
+	/* Nueva grilla de categorías tipo Stripe/Notion */
+	.career-grid {
+	    display: flex;
+    	gap: 2em;
+    	margin-top: 3em;
+    	flex-direction: row;
+    	align-content: center;
+    	justify-content: center;
+    	align-items: center;
+	}
+
+	.career-card {
+	  background-color: #1f2029;
+	  border-radius: 90px;
+	  padding: 1rem;
+	  text-align: center;
+	  transition: all 0.3s ease;
+	  border: 1px solid transparent;
+	  box-shadow: 0 0 0px transparent;
+	}
+
+	.career-card:hover {
+	  border-color: #e44c65;
+	  box-shadow: 0 0 20px rgba(228, 76, 101, 0.25);
+	  transform: translateY(-5px);
+	}
+
+	.career-card img {
+	  width: 60px;
+	  height: 60px;
+	  filter: brightness(0) invert(1);
+	  opacity: 0.9;
+	}
+
+	.career-card h3 {
+	  font-size: 1.1em;
+	  color: white;
+	  font-weight: 300;
+	  line-height: 1.4;
+	}
+
+	@media screen and (max-width: 980px) {
+	  .career-grid {
+	    grid-template-columns: repeat(2, 1fr); 
+	  }
+	}
+	
+	@media screen and (max-width: 600px) {
+	  .career-grid {
+	    grid-template-columns: 1fr; 
+	  }
+	}
