@@ -19,7 +19,7 @@ Mi propósito con este proyecto es que, al recorrerlo, te lleves claridad, motiv
 
 ------------
 
-Demo del proyecto: https://remotivate.site
+Demo del proyecto: https://lihuelm.github.io/Remotivate/
 
 ------------
 
