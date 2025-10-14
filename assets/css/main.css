@@ -4145,13 +4145,9 @@ input, select, textarea {
 	 	padding: 1rem;
 	 	text-align: center;
 	 	transition: all 0.3s ease;
+		width: 100px;
+    	height: 100px;
 	}
-
-	/* .career-card:hover {
-	  border-color: #e44c65;
-	  box-shadow: 0 0 20px rgba(228, 76, 101, 0.25);
-	  transform: translateY(-5px);
-	} */
 
 	.career-card img {
 	  width: 60px;
@@ -4211,14 +4207,39 @@ input, select, textarea {
 .career-card:nth-child(5) { animation-delay: 4s; }
 .career-card:nth-child(6) { animation-delay: 5s; }
 
-	@media screen and (max-width: 980px) {
-	  .career-grid {
-	    grid-template-columns: repeat(2, 1fr); 
-	  }
-	}
-	
-	@media screen and (max-width: 600px) {
-	  .career-grid {
-	    grid-template-columns: 1fr; 
-	  }
-	}
+
+@media screen and (max-width: 1024px) {
+  .career-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .career-card {
+    width: 90px;
+    height: 90px;
+    margin: 1rem;
+  }
+
+  .career-card img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .career-grid {
+    gap: 0rem;
+  }
+
+  .career-card {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+	.career-grid {
+    justify-content: space-between;
+  }
+}
