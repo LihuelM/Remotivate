@@ -99,20 +99,20 @@ document.addEventListener("DOMContentLoaded", function () {
             const descriptionDiv = document.createElement("div");
             descriptionDiv.classList.add("career-description");
             descriptionDiv.textContent = career.description;
-            descriptionDiv.style.display = "none";
+            // descriptionDiv.style.display = "none";
 
             // Agregamos elementos al contenedor
             careerItem.appendChild(title);
             careerItem.appendChild(descriptionDiv);
 
             // Nuevo comportamiento: clic en toda la tarjeta (no solo en el título)
-            careerItem.addEventListener("click", (e) => {
-                // Evitar conflicto si algún día agregás un botón dentro
-                if (e.target.tagName === "BUTTON") return;
+            // careerItem.addEventListener("click", (e) => {
+            //     // Evitar conflicto si algún día agregás un botón dentro
+            //     if (e.target.tagName === "BUTTON") return;
 
-                const isOpen = descriptionDiv.style.display === "block";
-                descriptionDiv.style.display = isOpen ? "none" : "block";
-            });
+            //     const isOpen = descriptionDiv.style.display === "block";
+            //     descriptionDiv.style.display = isOpen ? "none" : "block";
+            // });
 
             careersContainer.appendChild(careerItem);
         });
@@ -125,21 +125,21 @@ document.addEventListener("DOMContentLoaded", function () {
     filterCareers();
 
     // Manejo del toggle exclusivo para intro-cards
-    document.querySelectorAll('.intro-card').forEach(card => {
-        card.addEventListener('click', function (e) {
-          // Evitar que el clic en los botones afecte la lógica
-          if (e.target.tagName === 'BUTTON') return;
+    // document.querySelectorAll('.intro-card').forEach(card => {
+    //     card.addEventListener('click', function (e) {
+    //       // Evitar que el clic en los botones afecte la lógica
+    //       if (e.target.tagName === 'BUTTON') return;
     
-          document.querySelectorAll('.intro-card .card-content').forEach(content => {
-            if (!content.classList.contains('hidden')) {
-              content.classList.add('hidden');
-            }
-          });
+    //       document.querySelectorAll('.intro-card .card-content').forEach(content => {
+    //         if (!content.classList.contains('hidden')) {
+    //           content.classList.add('hidden');
+    //         }
+    //       });
     
-          const content = this.querySelector('.card-content');
-          content.classList.toggle('hidden');
-        });
-      });
+    //       const content = this.querySelector('.card-content');
+    //       content.classList.toggle('hidden');
+    //     });
+    //   });
 
     // Relación entre categorías y tags relevantes
     const categoryTagsMap = {

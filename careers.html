@@ -102,7 +102,7 @@
                         <section id="careers-container" class="fade-in">
                             <div class="major">
 								<h3>Carreras Relacionadas</h3>
-								<p>Haz click sobre las tarjetas, para poder conocer -un poco- acerca de que trata cada carrera.</p>
+								<p>Pasa el cursor sobre las tarjetas para conocer un poco más sobre cada una de ellas.</p>
                             </div>
                             <div class="careers">
                                 <!-- Las carreras filtradas aparecerán aquí dinámicamente -->
@@ -117,16 +117,15 @@
 		</div>
 
 		<!-- Scripts -->
-
-			<script>
-  document.querySelectorAll(".intro-card").forEach(card => {
-    card.addEventListener("click", (e) => {
-      // Evita que el botón dentro de la card propague el click
-      if (e.target.classList.contains("view-careers")) return;
-      card.classList.toggle("active");
-    });
-  });
-</script>
+			<!-- <script>
+			  document.querySelectorAll(".intro-card").forEach(card => {
+			    card.addEventListener("click", (e) => {
+			      // Evita que el botón dentro de la card propague el click
+			      if (e.target.classList.contains("view-careers")) return;
+			      card.classList.toggle("active");
+			    });
+			  });
+			</script> -->
 
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
