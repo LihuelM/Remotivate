@@ -3810,6 +3810,7 @@ input, select, textarea {
 
 			header.major {
 				margin: 0 auto 2em auto;
+				width: 95%;
 			}
 
 		/* Goto Next */

@@ -62,13 +62,23 @@ document.addEventListener("DOMContentLoaded", function () {
     details.innerHTML = "<p>Haz clic en una plataforma para ver sus detalles.</p>"; // Reset detalle
 
     data.forEach(platform => {
-      const img = document.createElement("img");
-      img.src = platform.image;
-      img.alt = platform.title;
-      img.title = platform.title;
-      img.addEventListener("click", () => renderDetails(platform));
-      gallery.appendChild(img);
-    });
+    // contenedor tarjeta
+    const card = document.createElement("div");
+    card.classList.add("training-card");  
+
+    // imagen del logo
+    const img = document.createElement("img");
+    img.src = platform.image;
+    img.alt = platform.title;
+    img.title = platform.title; 
+
+    // click en toda la tarjeta, no solo la imagen
+    card.addEventListener("click", () => renderDetails(platform));  
+
+    card.appendChild(img);
+    gallery.appendChild(card);
+  });
+
 
     // Marca activa la categoría seleccionada
     [...categoryList.children].forEach(el => el.classList.remove("active"));
@@ -77,13 +87,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function renderDetails(platform) {
-    // Remover la clase 'selected' de todas las imágenes
-    const allImages = document.querySelectorAll("#platform-gallery img");
-    allImages.forEach(img => img.classList.remove("selected"));  
-
-    // Buscar la imagen correspondiente y marcarla
-    const selectedImg = [...allImages].find(img => img.alt === platform.title);
-    if (selectedImg) selectedImg.classList.add("selected");  
+    // Remover 'selected' de todas las tarjetas
+    const allCards = document.querySelectorAll("#platform-gallery .training-card");
+    allCards.forEach(card => card.classList.remove("selected"));
+      
+    // Buscar la tarjeta correspondiente por alt del <img> interno
+    const selectedCard = [...allCards].find(card => {
+      const img = card.querySelector("img");
+      return img && img.alt === platform.title;
+    });
+    if (selectedCard) selectedCard.classList.add("selected");
 
     // Render del detalle
     details.innerHTML = `
